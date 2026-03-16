@@ -2,6 +2,7 @@
   <div>
     <NuxtPage>
       <LayoutsHeader />
+      <ProjectsDashboard />
     </NuxtPage>
   </div>
 </template>

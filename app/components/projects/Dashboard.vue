@@ -1,8 +1,8 @@
 <template>
   <div class="dashboard-container">
     <div class="dashboard-grid">
-      <Explorer />
-      <Terminal />
+      <Explorer class="explorer-frame" />
+      <Terminal class="terminal-frame" />
     </div>
   </div>
 </template>
@@ -14,19 +14,19 @@
 
 <style lang="scss" scoped>
   .dashboard-container {
-    width: 90%;
-    padding: 0 20px;
-    margin-top: 2rem;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 1rem;
   }
 
   .dashboard-grid {
     display: flex;
     flex-direction: row;
-    gap: 24px;
+    gap: 20px;
     width: 100%;
-    max-width: 1200px;
+    max-width: 90%;
     @media (max-width: 400px) {
       flex-direction: column;
     }
